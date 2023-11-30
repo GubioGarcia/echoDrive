@@ -8,20 +8,5 @@ sudo mknod /dev/echodev c $(grep echodev /proc/devices | awk '{print $1}') 0
 
 echo "hello, world!" | sudo tee /dev/echodev
 
-
-
-gubio@gubio-VirtualBox:~/Documentos/echoDrive$ echo "hello, world!" | sudo tee /dev/echodev
-hello, world!
-gubio@gubio-VirtualBox:~/Documentos/echoDrive$ dmesg | tail
-[ 1610.202009] ntfs: driver 2.1.32 [Flags: R/O MODULE].
-[ 1610.254623] QNX4 filesystem 0.2.3 registered.
-[ 3390.356918] EchoDev: Registrando dispositivo de caractere
-[ 3390.356926] EchoDev: registrado corretamente com major number 236
-[ 3970.917426] EchoDev: Dispositivo aberto
-[ 3970.917596] EchoDev: Recebeu 14 caracteres do usuário
-[ 3970.917599] EchoDev: Dispositivo fechado
-[ 3994.374899] EchoDev: Dispositivo aberto
-[ 3994.375151] EchoDev: Recebeu 14 caracteres do usuário
-[ 3994.375154] EchoDev: Dispositivo fechado
-gubio@gubio-VirtualBox:~/Documentos/echoDrive$ 
+dmesg | tail
 
