@@ -1,8 +1,8 @@
 #include <linux/module.h> // Necessário para todos os módulos
 #include <linux/kernel.h> // Necessário para KERN_INFO
 #include <linux/fs.h> // Necessário para as funções de dispositivo de caractere
-#include <linux/cdev.h> // Necessário para cdev
-#include <linux/uaccess.h> // Necessário para copy_to_user e copy_from_user
+#include </usr/include/linux/surface_aggregator/cdev.h> // Necessário para cdev
+#include </lib/modules/5.15.0-76-generic/build/include/linux/uaccess.h> // Necessário para copy_to_user e copy_from_user
 
 #define DEVICE_NAME "echodev" // Nome do dispositivo como aparecerá em /dev/echodev
 
