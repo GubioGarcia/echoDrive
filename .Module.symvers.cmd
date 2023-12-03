@@ -1,1 +1,0 @@
-cmd_/home/gubio/Documentos/echoDrive/Module.symvers := sed 's/\.ko$$/\.o/' /home/gubio/Documentos/echoDrive/modules.order | scripts/mod/modpost -m -a  -o /home/gubio/Documentos/echoDrive/Module.symvers -e -i Module.symvers   -T -

@@ -1,1 +1,0 @@
-cmd_/home/gubio/Documentos/echoDrive/echo.ko := ld -r -m elf_x86_64 -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/gubio/Documentos/echoDrive/echo.ko /home/gubio/Documentos/echoDrive/echo.o /home/gubio/Documentos/echoDrive/echo.mod.o;  true
